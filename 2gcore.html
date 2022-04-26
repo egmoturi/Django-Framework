@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> 2G core creation</h1>
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    <input type="file" name="myfile">
+    <button onclick="myFunction()">Create on Core </button>
+  </form>
+
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

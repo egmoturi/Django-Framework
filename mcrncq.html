@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> Alarm Querry</h1>
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    
+    <button onclick="myFunction()">Search for alarm instructions </button>
+  </form>
+
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

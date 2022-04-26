@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+
+<br>
+<br>
+<br>
+<br>
+
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="form-group">
+<label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">2G IP  modification </label>
+<div class="form-group">  
+{{form}}
+  <input type="submit" value="Change 2G IP">
+</form>
+
+</br>
+</br>
+</br>
+</br>
+{% endblock %}

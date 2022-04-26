@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{%block content%}
+<h2> 
+<br>
+<br>
+<br>
+<br>
+{% for element in note %}
+{{element}} 
+{% endfor %}
+</h2>
+<form action="{%url 'update' %}" method="post">
+{% csrf_token %}
+{{ Knowledgeform }}
+
+<input type="submit" value="Add to Knowledge base">
+</form>
+</br>
+</br>
+</br>
+</br>
+{% endblock %}

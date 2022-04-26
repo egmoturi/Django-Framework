@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+<br>
+<br>
+<br>
+<br>
+
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="form-group">
+<label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">TRX redistribution in BSC signaling units, Enter BCFS and BCSU separated by comma </label>
+<div class="form-group">  
+{{form}}
+  <input type="submit" value="Redistribute">
+</form>
+
+ <br>
+
+{% endblock %}

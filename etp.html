@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+<br>
+<br>
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="form-group">
+<label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">ETPE change within BSC  </label>
+
+<div class="form-group">  
+<br>
+{{form}}
+  <input type="submit" value="Migrate to new ETPE ">
+</form>
+
+ <br>
+
+</br>
+</br>
+</br>
+{% endblock %}

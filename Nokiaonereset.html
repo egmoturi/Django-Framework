@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<br>
+<br>
+<h1> Nokia 2G Reset</h1>
+
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="form-group">
+<label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">Single Site Reset  </label>
+<div class="form-group">  
+{{form}}
+  <input type="submit" value="Reset Site">
+</form>
+
+<script>
+  function myFunction() {
+    if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
+  }
+</script>
+
+  
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

@@ -1,0 +1,21 @@
+<script>
+let QUESTION_ID = '{{ question.id }}';
+let updateSocket;
+function connectSocket() {
+    updateSocket = new WebSocket(
+        'ws://' + window.location.host +
+        '/ws/polls/' + QUESTION_ID);
+    updateSocket.onmessage = function(e) {
+        console.log("Received a message from the socket:", e.data);
+    };
+    updateSocket.onclose = function(e) {
+        console.error('Chat socket closed unexpectedly; reconnecting');
+        setTimeout(connectSocket, 1000);
+    };
+    updateSocket.onopen = function(e) {
+        console.log("Socket connected; sending a ping");
+        updateSocket.send("echo");
+    }
+}
+connectSocket();
+</script>

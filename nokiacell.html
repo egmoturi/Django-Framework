@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+
+<h1> Nokia 2G cell addition </h1>
+
+ <h2>Expected Input format (.xlsx file):</h2>
+ <table>
+ 
+     <tr>
+         <td><strong>BSC</strong></td>
+         <td><strong>BCF</strong></td>
+         <td><strong>BTS</strong></td>
+         <td><strong>freq</strong></td>
+         <td><strong>ncc</strong></td>
+         <td><strong>bcc</strong></td>
+         <td><strong>lac</strong></td>
+         <td><strong>rac</strong></td>
+         <td><strong>name</strong></td>
+         <td><strong>ci</strong></td>
+         <td><strong>band</strong></td>
+         <td><strong>hsn</strong></td>
+  </tr>
+     <tr>
+         <td>KSMBSC2109</td>
+         <td>1722</td>
+         <td>1728</td>
+         <td>12;46;48</td>
+         <td>1</td>
+         <td>2</td>
+         <td>5130</td>
+         <td>132</td>
+         <td>test12</td>
+         <td>6310</td>
+         <td>900</td>
+         <td>33</td>
+     </tr>
+       <tr>
+         <td>WEBBSC2208</td>
+         <td>100</td>
+         <td>104</td>
+         <td>612;746;748</td>
+         <td>1</td>
+         <td>3</td>
+         <td>5555</td>
+         <td>0</td>
+         <td>TEST13</td>
+         <td>5545</td>
+         <td>1800</td>
+         <td>47</td>
+     </tr>
+ </table>
+ <br>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    <input type="file" name="myfile">
+    <button type="submit">Create Cell on BSC</button>
+  </form>
+
+  {% if uploaded_file_url %}
+  <p>Please wait as site is created on the BSC. </p>
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+  {% endif %}
+
+{% endblock %}

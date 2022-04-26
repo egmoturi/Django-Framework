@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <meta name="description" content="With the power of innovations comes great reward. Join us in this journey as we automate.">
+                <meta name="author" content="">
+                <meta name="generator" content="Hugo 0.58.3"><title>Innovations for Operations</title><link rel="canonical" href="#">
+                <meta name="theme-color" content="#ffffff">
+
+        <style>
+
+                
+
+
+
+
+
+
+                    * {
+                    box-sizing: border-box;
+                    }
+
+                    body {
+                    font-family: Arial;
+                    padding: 10px;
+                    background: #f1f1f1;
+                    }
+
+                    /* Header/Blog Title */
+                    .header {
+                    padding: 20px;
+                    text-align: center;
+                    background: #D9E254;
+                    }
+
+                    .header h1 {
+                    font-size:60px;
+                    }
+
+                    /* Style the top navigation bar */
+                    .topnav {
+                    overflow: hidden;
+                    background-color: #333;
+                    }
+
+                    /* Style the topnav links */
+                    .topnav a {
+                    float: left;
+                    display: block;
+                    color: #f2f2f2;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    }
+
+                    /* Change color on hover */
+                    .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                    }
+
+                    /* Create two unequal columns that floats next to each other */
+                    /* Left column */
+                    .leftcolumn {   
+                    float: left;
+                    width: 75%;
+                    }
+
+                    /* Right column */
+                    .rightcolumn {
+                    float: left;
+                    width: 25%;
+                    background-color: #f1f1f1;
+                    padding-left: 20px;
+                    }
+
+                    /* Fake image */
+                    .fakeimg {
+                    background-color: #aaa;
+                    width: 100%;
+                    padding: 20px;
+                    }
+
+                    /* Add a card effect for articles */
+                    .card {
+                    background-color: white;
+                    padding: 20px;
+                    margin-top: 20px;
+                    }
+
+                    /* Clear floats after the columns */
+                    .row:after {
+                    content: "";
+                    display: table;
+                    clear: both;
+                    }
+
+                    /* Footer */
+                    .footer {
+                    padding: 20px;
+                    text-align: left;
+                    background: #8d8741;
+                    margin-top: 20px;
+                    }
+
+                    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+                    @media screen and (max-width: 800px) {
+                    .leftcolumn, .rightcolumn {   
+                        width: 100%;
+                        padding: 0;
+                    }
+                    }
+
+                    /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+                    @media screen and (max-width: 400px) {
+                    .topnav a {
+                        float: none;
+                        width: 100%;
+                    }
+                    }
+
+                    ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: #333;
+                    }
+
+                    li {
+                    float: left;
+                    }
+
+                    li a, .dropbtn {
+                    display: inline-block;
+                    color: white;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                    }
+
+                    li a:hover, .dropdown:hover .dropbtn {
+                    background-color: #8e1c00;
+                    }
+
+                    li.dropdown {
+                    display: inline-block;
+                    }
+
+                    .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #f9f9f9;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                    z-index: 1;
+                    }
+
+                    .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+                    }
+
+                    .dropdown-content a:hover {background-color: #caa612;}
+
+                    .dropdown:hover .dropdown-content {
+                    display: block;
+                    }
+
+
+
+
+
+        </style>
+    </head>
+    <body>
+        {% load static  %}
+        <div class="header">
+            <h1>Innovations Hub</h1>
+            <p>"What is now proved was once only imagined"</p>
+            <p>William Blake</p>
+            </div>
+
+            <div class="topnav">
+            <a href="http://10.232.12.46:9009">Daily SUR</a>
+            <a href="/apprel/">App release Calender</a>
+            <a href="/suggestions/">Inovation Status</a>
+                <a href="https://safaricom.atlassian.net/secure/RapidBoard.jspa?rapidView=361&selectedIssue=RNIO-48">Jira</a>
+            <a href="http://10.184.7.135:8090/EAIGIT/rnio/Automation_for_Operations/">GitLab</a>
+            <a href="#" style="float:right">Login</a>
+        </div>
+
+        <ul>
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Inventory</a>
+                <div class="dropdown-content">
+                <a class="c-dropdown-item" href="/downloadinventory/">Nokia  &nbsp;<span class="c-text-vue">Download Nokia Inventory</span></a>
+                <a class="c-dropdown-item" href="/searchmodule/">Nokia  &nbsp;<span class="c-text-vue">Nokia Inventory Search</span></a>
+            </div>
+                
+                </li>
+                <li class="dropdown">
+                <a class="c-dropdown-item" href="/">
+                <a href="javascript:void(0)" class="dropbtn">MRBTS</a>
+                <div class="dropdown-content">
+                <a class="c-dropdown-item" href="/resetonemrbts/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; Single MRBTS &nbsp;<span class="c-text-vue">Reset </span></a>
+                <a class="c-dropdown-item" href="/resetmrbts/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; Multiple MRBTS &nbsp;<span class="c-text-vue">Reset </span></a>
+                <a class="c-dropdown-item" href="/resetbcf/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; BCF &nbsp;<span class="c-text-vue">Reset </span></a>
+                <a class="c-dropdown-item" href="/updatemrbts/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS RAN 19 &nbsp;<span class="c-text-vue">Sofware Update using TowerId </span></a>
+                <a class="c-dropdown-item" href="/updatemrbtsoam/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS RAN 19 &nbsp;<span class="c-text-vue">Sofware Update using Oam IP </span></a>
+                <a class="c-dropdown-item" href="/update20/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS RAN 20 &nbsp;<span class="c-text-vue">Sofware Update using TowerId </span></a>
+                <a class="c-dropdown-item" href="/update20oam/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS RAN 20 &nbsp;<span class="c-text-vue">Sofware Update using Oam IP </span></a>
+                
+                 <a class="c-dropdown-item" href="/mrbtsstatus/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS  &nbsp;<span class="c-text-vue">Status </span></a>
+                <a class="c-dropdown-item" href="/wip/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; All MRBTS  &nbsp;<span class="c-text-vue">Status</span></a>
+                </div>
+                
+                </li>
+            </li>
+            <li class="dropdown">
+            <a class="c-dropdown-item" href="/">
+            <a href="javascript:void(0)" class="dropbtn">Network Status</a>
+            <div class="dropdown-content">
+            <a class="c-dropdown-item" href="/rncstatus/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; RNC &nbsp;<span class="c-text-vue">Signaling </span></a>
+            <a class="c-dropdown-item" href="/bscstatus/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; BSC &nbsp;<span class="c-text-vue">Signalling </span></a>
+            <a class="c-dropdown-item" href="/bcfstatus/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; BCF Per BSC  &nbsp;<span class="c-text-vue">Status </span></a>            
+             <a class="c-dropdown-item" href="/mrbtsstatus/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; MRBTS  &nbsp;<span class="c-text-vue">Status </span></a>
+            <a class="c-dropdown-item" href="/wip/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; All MRBTS  &nbsp;<span class="c-text-vue">Status</span></a>
+            </div>
+            
+            </li>
+                <li class="dropdown">
+                    <a class="c-dropdown-item" href="/">
+                    <a href="javascript:void(0)" class="dropbtn">Integrations</a>
+                    <div class="dropdown-content">
+                        <a class="c-dropdown-item" href="/sdcchaddition/">Nokia  &nbsp;<span class="c-text-bootstrap">SDCCH Addition</span></a>
+                        <a class="c-dropdown-item" href="/CreateNokiaTrx/">Nokia  &nbsp;<span class="c-text-bootstrap">TRX Addition</span></a>
+                        <a class="c-dropdown-item" href="/nokia_2g_add/">Nokia  &nbsp;<span class="c-text-laravel">2G Cell Addition</span></a>
+                        <a class="c-dropdown-item" href="/nokia_2g_create/">Nokia  &nbsp;<span class="c-text-react">2G Site Creation</span></a>
+                        <a class="c-dropdown-item" href="/u2100Nokia/">Nokia  &nbsp;<span class="c-text-vue">U2100 Carrier 3 and 4 XML generartor</span></a>
+                        <a class="c-dropdown-item" href="/iups/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; RNC-SGSN &nbsp;<span class="c-text-vue">Integration </span></a>
+                    <a class="c-dropdown-item" href="/2gcorecreation/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; 2G core&nbsp;<span class="c-text-vue">Creation</span></a>
+                    <a class="c-dropdown-item" href="/3gcorecreation/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; 3G core &nbsp;<span class="c-text-vue">Creation </span></a>
+                     <a class="c-dropdown-item" href="/iurDeploy/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp;RNC &nbsp;<span class="c-text-vue">IUR </span></a>
+                     <a class="c-dropdown-item" href="/wip/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; BSC  &nbsp;<span class="c-text-vue">Sigtran </span></a>
+                    <a class="c-dropdown-item" href="/wip/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; BSC  &nbsp;<span class="c-text-vue">complete</span></a>
+                    </div>
+                    
+                    </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Nokia Services</a>
+                    <div class="dropdown-content">
+                                </a>
+                                <a class="c-dropdown-item" href="/ca/">Nokia  &nbsp;<span class="c-text-vue">LTE Carrier activation</span></a>
+                                <a class="c-dropdown-item" href="/nbiot/">Nokia  &nbsp;<span class="c-text-vue">Narrow Band IoT</span></a>
+                                <a class="c-dropdown-item" href="/etp/">Nokia  &nbsp;<span class="c-text-vue">ETPE change</span></a>
+                                <a class="c-dropdown-item" href="/vulnerability_checks/">Nokia  &nbsp;<span class="c-text-vue">BSC Vulnerability Checks</span></a>
+                                <a class="c-dropdown-item" href="/redistribute/">Nokia &nbsp;<span class="c-text-vue">TRX Redistribution</span>&nbsp; &nbsp;<span class="c-text-laravel">2G</span></a>
+                                <a class="c-dropdown-item" href="/Nokia_2g_rehome/">Nokia &nbsp;<span class="c-text-vue">Rehoming</span>&nbsp; &nbsp;<span class="c-text-laravel">2G</span></a>
+                                <a class="c-dropdown-item" href="/userplane/">Nokia BSC   &nbsp;<span class="c-text-vue">userplane</span>&nbsp; &nbsp;<span class="c-text-laravel">Ping</span></a>
+                                <a class="c-dropdown-item" href="/bscclean/">Nokia BSC   &nbsp;<span class="c-text-vue">Back up</span>&nbsp; &nbsp;<span class="c-text-laravel">Clean Up</span></a>
+                                <a class="c-dropdown-item" href="/relocate/">Nokia BCF relocation &nbsp;<span class="c-text-react"></span>&nbsp; for &nbsp;<span class="c-text-react">BTS_BCF change</span></a>
+                                <a class="c-dropdown-item" href="/bscchecks/">Nokia  &nbsp;<span class="c-text-vue">BSC</span>&nbsp; &nbsp;<span class="c-text-laravel">checks</span></a>
+                                <a class="c-dropdown-item" href="/rncchecks/">Nokia  &nbsp;<span class="c-text-vue">RNC</span>&nbsp; &nbsp;<span class="c-text-laravel">checks</span></a>
+                                <a class="c-dropdown-item" href="/bcfunlock/">Nokia  &nbsp;<span class="c-text-vue">BCF</span>&nbsp; &nbsp;<span class="c-text-laravel">Unlock</span></a>
+                         <a class="c-dropdown-item" href="/bcfunlock/">Nokia  &nbsp;<span class="c-text-vue">BCF</span>&nbsp; &nbsp;<span class="c-text-laravel">Unlock</span></a>
+                         
+                                <a class="c-dropdown-item" href="/bscpasswd/">Nokia  &nbsp;<span class="c-text-vue">BSC</span>&nbsp; &nbsp;<span class="c-text-laravel">password reset</span></a>
+                                <a class="c-dropdown-item" href="/ipmod/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; 2G IP &nbsp;<span class="c-text-vue">Modification </span></a>
+                                <a class="c-dropdown-item" href="/bscuserc/">Nokia &nbsp;<span class="c-text-vue"></span>&nbsp; User &nbsp;<span class="c-text-vue">Creation </span></a>
+                                <a class="c-dropdown-item" href="/lapd/">Nokia  &nbsp;<span class="c-text-vue"></span>&nbsp; BSC &nbsp;<span class="c-text-vue">Lapd </span>&nbsp;  &nbsp;<span class="c-text-laravel">Cleanup</span></a>
+                        </div>
+                    </li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Huawei Services</a>
+                    <div class="dropdown-content">
+                                </a><a class="c-dropdown-item" href="/huaweichecks">Huawei &nbsp;<span class="c-text-angular">Pre and Post Checks</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Huawei &nbsp;<spanlass c="c-text-vue">Rehoming</span>&nbsp; &nbsp;<span class="c-text-laravel">2G</span></a>
+                                <a class="c-dropdown-item" href="#">Huawei &nbsp;<span class="c-text-angular"></span></a>
+                                <a class="c-dropdown-item" href="/3Gcell/">Huawei &nbsp;<span class="c-text-bootstrap"></span>&nbsp; U2100 &nbsp;<span class="c-text-angular"> cell addition</span></a>
+                                <a class="c-dropdown-item" href="/ipsec/">Huawei &nbsp;<span class="c-text-bootstrap"></span>&nbsp; LTE &nbsp;<span class="c-text-bootstrap">IPsec script</span></a>
+                                <a class="c-dropdown-item" href="/huawei2gsite/">Huawei&nbsp;<span class="c-text-laravel"></span>&nbsp; 2G &nbsp;<span class="c-text-laravel">Creation</span></a>
+                                <a class="c-dropdown-item" href="/relocate/">Nokia BCF relocation &nbsp;<span class="c-text-react"></span>&nbsp; for &nbsp;<span class="c-text-react">BTS_BCF change</span></a>
+                                                       </div>
+                    </li>
+                    <li class="dropdown">
+                    <a class="dropbtn">Transmission Services</a>
+                    <div class="dropdown-content">
+                    
+                    </a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission  &nbsp;<span class="c-text-angular">Alarms</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission  &nbsp;<span class="c-text-bootstrap">Capacity</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-laravel">New Integrations</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission  &nbsp;<span class="c-text-vue">Availability</span></a>
+                
+                            <a class="c-dropdown-item" href="/Nokia_2g_rehome/">Transmission  &nbsp;<span class="c-text-vue">Nokia Rehoming</span>&nbsp; &nbsp;<span class="c-text-laravel">2G</span></a>
+                                <a class="c-dropdown-item" href="#">Transmission &nbsp;<span class="c-text-vue">Huawei Rehoming</span>&nbsp; &nbsp;<span class="c-text-laravel">2G</span></a>
+
+                                <div class="c-dropdown-divider"></div>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-angular"></span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-bootstrap"></span>&nbsp; for &nbsp;<span class="c-text-angular">Angular</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-bootstrap"></span>&nbsp; for &nbsp;<span class="c-text-bootstrap">Bootstrap</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission&nbsp;<span class="c-text-laravel"></span>&nbsp; for &nbsp;<span class="c-text-laravel">Laravel</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-react"></span>&nbsp; for &nbsp;<span class="c-text-react">React.js</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission&nbsp;<span class="c-text-vue"></span>&nbsp; for &nbsp;<span class="c-text-vue">Vue.js</span></a>
+                                <a class="c-dropdown-item" href="/wip/">Transmission &nbsp;<span class="c-text-vue"></span>&nbsp; for &nbsp;<span class="c-text-vue">Vue.js</span>&nbsp; &amp; &nbsp;<span class="c-text-laravel">Laravel</span></a>
+                                <div class="c-dropdown-divider"></div>
+                                <a class="c-dropdown-item" href="https://safaricomo365.sharepoint.com/sites/SafaricomConnect?e=1%3Aed2036a6c0834e5a9c8856a4da5b42ea">Cross functional &nbsp;<strong>BCP</strong></a>
+                                <a class="c-dropdown-item" href="/icons/pro/">Cross functional&nbsp;<strong>Icons</strong> &nbsp;<span class="c-badge-pro c-badge-pro-icons"></span></a>
+
+
+
+                    </div>
+
+                </li>
+
+
+                <li class="dropdown">
+                    <a class="dropbtn">Availability</a>
+                    <div class="dropdown-content">
+                                <a class="c-dropdown-item" href="/">
+                                </a><a class="c-dropdown-item" href="/cell_co/">Faulty Cells &nbsp;<span class="c-text-angular">Coast</span></a>
+                                <a class="c-dropdown-item" href="/cell_rv/">Faulty Cells  &nbsp;<span class="c-text-bootstrap">Rift</span></a>
+                                <a class="c-dropdown-item" href="/cell_we/">Faulty Cells  &nbsp;<span class="c-text-bootstrap">Western</span></a>
+                                <a class="c-dropdown-item" href="/cell_east/">Faulty Cells  &nbsp;<span class="c-text-laravel">Nairobi East</span></a>
+                                <a class="c-dropdown-item" href="/cell_nwest/">Faulty Cells  &nbsp;<span class="c-text-react">Nairobi West</span></a>
+                                <a class="c-dropdown-item" href="/cell_mtkenya/">Faulty Cells  &nbsp;<span class="c-text-vue">Mt Kenya</span></a>
+                                <a class="c-dropdown-item" href="/4Gcells/">Faulty Cells  &nbsp;<span class="c-text-vue">Nokia Faulty 4G cells</span></a>
+                              
+                                <a class="c-dropdown-item" href="/4G/">Nokia Faulty Cells  &nbsp;<span class="c-text-laravel"></span>&nbsp; 4G &nbsp;<span class="c-text-laravel">S1-MME Failures</span></a>
+                                <a class="c-dropdown-item" href="/4Ggtpu/">Nokia Faulty Cells  &nbsp;<span class="c-text-laravel"></span>&nbsp; 4G &nbsp;<span class="c-text-laravel">S1-SGW Failures</span></a>
+                                <a class="c-dropdown-item" href="/4Goam/">Nokia Faulty Cells  &nbsp;<span class="c-text-laravel"></span>&nbsp; 4G &nbsp;<span class="c-text-laravel">OAM Failures</span></a>
+            
+                                                                
+                        </div>
+                </li>
+
+                
+                <li class="dropdown">
+                            <a class="dropbtn">Alarms</a>
+                            <div class="dropdown-content">
+
+                                <a class="c-dropdown-item" href="/">
+                                </a><a class="c-dropdown-item" href="/sitealarms/">Radio Access Nokia &nbsp;<span class="c-text-angular">Site Alarms</span></a>
+                            </a><a class="c-dropdown-item" href="/sitealarmsname/">Radio Access Nokia &nbsp;<span class="c-text-angular">Search Alarms by Description</span></a>
+                              
+                          
+                                </a><a class="c-dropdown-item" href="/nokiaranalarms/">Radio Access Nokia &nbsp;<span class="c-text-angular">Alarms</span></a>
+                                <a class="c-dropdown-item" href="/huaweiranalarms/">Radio Access Huawei  &nbsp;<span class="c-text-bootstrap">Alarms</span></a>
+                                <a class="c-dropdown-item" href="/ipranAlarms/"> TX Access   &nbsp;<span class="c-text-vue">IP RAN alarms</span></a>
+                                <a class="c-dropdown-item" href="/wip/">TX Access  &nbsp;<span class="c-text-bootstrap">Aviat alarms</span></a>
+                                <a class="c-dropdown-item" href="/wip/">TX Access   &nbsp;<span class="c-text-laravel">NEC alarms</span></a>
+                                <a class="c-dropdown-item" href="/wip/">TX Access a  &nbsp;<span class="c-text-react">Erickson Alarms</span></a>
+                                
+                            </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="dropbtn">IPsec</a>
+
+                <div class="dropdown-content">
+                <a class="c-dropdown-item" href="/ipcert/">Nokia IPsec  &nbsp;<strong>IP Change XML</strong></a>
+                <a class="c-dropdown-item" href="/iprtpol/">Nokia IPsec  &nbsp;<strong>IPKEP objects</strong></a>
+                <a class="c-dropdown-item" href="/ipsecpol/">Nokia IPsec &nbsp;<strong>Security Policy Objects</strong></a>
+                <a class="c-dropdown-item" href="/ipsecfinal/">Nokia IPsec &nbsp;<strong>Final activation</strong></a>    
+                <a class="c-dropdown-item" href="/ipsecpie-chart/">Nokia IPsec &nbsp;<strong>Activation status</strong></a>    
+   
+            </div>
+
+            </li>
+                <li class="dropdown">
+                            <a class="dropbtn">Core  DB analysitcs</a>
+                            <div class="dropdown-content">
+
+                        <a class="c-dropdown-item" href="/bssdb/">Nokia BSC  &nbsp;<strong>Db</strong></a>
+                        <a class="c-dropdown-item" href="/mssdb/">Nokia MSS &nbsp;<strong>Db</strong></a>
+                        <a class="c-dropdown-item" href="/wip/">Cells missing in  &nbsp;<strong>Radio</strong></a>
+                        <a class="c-dropdown-item" href="/wip/">Cells missing in  &nbsp;<strong>Core</strong></a>
+
+                            </div>
+                </li>
+
+                <li class="dropdown">
+                            <a class="dropbtn">Knowledge Base</a>
+                            <div class="dropdown-content">
+
+                        <a class="c-dropdown-item" href="/bsc/">Nokia BSC manual &nbsp;<strong>RAN_19</strong></a>
+                        <a class="c-dropdown-item" href="/mcrnc/">Nokia RNC manual &nbsp;<strong>RAN_19</strong></a>
+                        <a class="c-dropdown-item" href="/add/">Update Knowledge Base &nbsp;<strong>3.0</strong></a>
+                        <a class="c-dropdown-item" href="/searchdb/">Search Knowledge Base &nbsp;<strong>3.0</strong></a>
+
+                            </div>
+                </li>
+                <li class="dropdown">
+                    <a class="dropbtn">Database Querry</a>
+                    <div class="dropdown-content">
+
+                <a class="c-dropdown-item" href="/nokiasql/">Nokia  &nbsp;<strong>SQL DB</strong></a>
+                <a class="c-dropdown-item" href="/wip/">Huawei &nbsp;<strong>SQL DB</strong></a>
+                <a class="c-dropdown-item" href="/wip/">TX &nbsp;<strong>SQL DB</strong></a>
+                <a class="c-dropdown-item" href="/wip/">Miscelanious &nbsp;<strong>3.0</strong></a>
+
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Documentation</a>
+                <div class="dropdown-content">
+                    <a class="c-dropdown-item" href="https://safaricomo365.sharepoint.com/sites/SafaricomConnect?e=1%3Aed2036a6c0834e5a9c8856a4da5b42ea">Documentation  &nbsp;<span class="c-text-vue">BCP </span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia Cell addition app </span></a>
+                    <a class="c-dropdown-item" href="/name1/">Documentation  &nbsp;<span class="c-text-vue">Nokia 2G creation app</span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia Carrier Aggregatin app</span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia 3G carrier addition app</span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia user plane test</span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia Cell addtion</span></a>
+                    <a class="c-dropdown-item" href="/wip/">Documentation  &nbsp;<span class="c-text-vue">Nokia Cell addtion</span></a>
+                    <a class="c-dropdown-item" href="/test1doc/">Documentation  &nbsp;<span class="c-text-vue">test doc</span></a>
+                </div>
+        
+                </li>
+        </ul>
+     {%block content%}
+
+
+            {% endblock %}
+
+<div class="row">
+        <div class="leftcolumn">
+            <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Dec 7, 2017</h5>
+            
+            <img src="{% static 'Team Kubwa.jpg' %}" >
+            <p>The Support Team on a Tree Planting mission.</p>
+            </div>
+            <!--
+            <div class="card">
+            <h2>TITLE HEADING</h2>
+            <h5>Title description, Sep 2, 2017</h5>
+            <div class="fakeimg" style="height:200px;">Image</div>
+            <p>Some text..</p>
+            <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+            </div>
+            -->
+        </div>
+
+
+
+
+
+        <div class="rightcolumn">
+            <div class="card">
+            <h2>The Mission Statement</h2>
+        
+            <p>To achieve configuration efficiency towards realization of a zero touch network </p>
+            </div>
+            <div class="card">
+            <h3>The Team</h3>
+            <div class="fakeimg"><p>Image</p></div>
+            <div class="fakeimg"><p>Image</p></div>
+            <div class="fakeimg"><p>Image</p></div>
+            </div>
+            <div class="card">
+            <h3>Email Support</h3>
+            <p>Some text..</p>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+
+
+
+   
+            
+        <div class="footer">
+            <h5>Quick links</h5>
+                        <ul class="c-list-unstyled">
+                        <li><a href="wip/">Documentation</a></li>
+                        <li><a href="/wip/">Availabilty</a></li>
+                        <li><a href="/wip/">Transmission Capacity</a></li>
+                        <li><a href="/wip/">TRX creation</a></li>
+                        <li><a href="/wip/">Alarms</a></li>
+                        </ul>
+                        </ul>
+
+        </div>
+
+    </body>
+</html>

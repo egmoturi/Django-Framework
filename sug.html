@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{%block content%}
+<h2> 
+<br>
+<br>
+<br>
+<br>
+{% for element in note %}
+{{element}} 
+{% endfor %}
+</h2>
+<form action="{%url 'suggest' %}" method="post">
+{% csrf_token %}
+{{ SuggestionForm }}
+
+<input type="submit" value="Add Suggestion">
+</form>
+</br>
+</br>
+</br>
+</br>
+{% endblock %}

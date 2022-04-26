@@ -1,0 +1,25 @@
+
+{% extends 'base.html' %}
+{% block  content %}
+<br>
+<br>
+<br>
+<br>
+
+
+<h1> Radio Controller Alarms </h1>
+
+{% load static %}  
+{% load django_tables2 %}
+{% load bootstrap3 %}
+
+{% if filter %}
+    <form action="" method="get" class="form form-inline">
+        {% bootstrap_form filter.form layout='inline' %}
+        {% bootstrap_button 'filter' %}
+    </form>
+{% endif %}
+
+{% render_table table %}
+
+{% endblock %}

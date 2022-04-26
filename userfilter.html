@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<br>
+<br>
+
+
+  <form method="GET">
+  {% csrf_token %}
+    {{ filter.form.as_table }}
+    <button type="submit">Search</button>
+  </form>
+  <br>
+  <br>
+  <ul>
+  <p> Technology --  Vendor -- Description -- Resolution </p>
+  {% for user in filter.qs %}
+    <li>{{ user.technology }}--{{ user.vendor }}  --{{ user.description }}  -- {{ user.resolution }}</li>
+  {% endfor %}
+  </ul>
+
+{% endblock %}

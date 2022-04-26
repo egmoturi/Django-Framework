@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> Nokia IPsec</h1>
+
+
+<h2> IP sec Policy Objects file should include: </h2>
+ <table>
+  				 	
+
+     <tr>
+         <td><strong>LTE Site name</strong></td>
+         <td><strong>New eNB IP</strong></td>
+         <td><strong>New Gateway IP</strong></td>
+         <td><strong>New VLANs</strong></td>
+         <td><strong>S1 Loopback Interface IP/32</strong></td>
+         <td><strong>Remote Peer IP</strong></td>
+  </tr>
+  					
+
+     <tr>
+         <td>12705_WN_LWL21228-Kabukyek_OUTD_MGF_HUB</td>
+         <td>10.168.208.6</td>
+         <td>10.168.208.5</td>
+         <td>2107</td>
+         <td>10.169.120.3</td>
+         <td>10.169.120.1</td>
+        
+     </tr>
+
+
+ </table>
+
+
+  <form action="{% url "iprtpol" %}" method="POST" enctype="multipart/form-data" class="form-horizontal"> 
+{% csrf_token %}
+
+<div class="form-group">
+    <label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">Check IP sec certificates using File upload: </label>
+    <div class="col-md-8">
+        <input type="file" name="myfile" id="myfile" class="form-control">
+    </div>                    
+</div>
+<div class="form-group">                    
+    <div class="col-md-3 col-sm-3 col-xs-12 col-md-offset-3" style="margin-bottom:10px;">
+         <button class="btn btn-primary"> <span class="glyphicon glyphicon-upload" style="margin-right:5px;"></span>Upload and Check for IP sec certificates  </button>
+    </div> 
+</div>
+</form>
+<script>
+  function myFunction() {
+    if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
+  }
+</script>
+
+  {% if uploaded_file_url %}
+  <p>Please wait as Certificates are checked . </p>
+    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+  {% endif %}
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

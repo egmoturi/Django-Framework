@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+
+<br>
+<br>
+<br>
+<br>
+
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="c-text-laravel" style="margin-bottom:30px;">
+<label for="name" class="c-text-laravel">Inventory Download </label>
+  
+    <div class="c-text-laravel" style="margin-bottom:30px font-size:40;">
+  <input type="submit" value="Download Hardware report">
+  </div> 
+ 
+</form>
+
+</br>
+</br>
+</br>
+</br>
+{% endblock %}

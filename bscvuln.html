@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> BSC Vulnerability Checks</h1>
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <button onclick="myFunction()">Run Vulnerability checks</button>
+  </form>
+<script>
+  function myFunction() {
+    if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
+  }
+</script>
+
+  
+
+  
+{% endblock %}

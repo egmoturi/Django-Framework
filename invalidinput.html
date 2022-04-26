@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> Core cells download</h1>
+<h2> Invalid input please try again</h2>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    
+    <button onclick="myFunction()">Download report  </button>
+  </form>
+
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

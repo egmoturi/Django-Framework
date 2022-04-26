@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h2> SQL  QUERY</h2>
+<p>
+  please input these manner in all CAPS techdb:2G or 3G or 4G table eg WCEL, LNCEL or BCF daysdb eg 0,8 or 1 how far back you wish to go 
+</p>
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    
+    <button onclick="myFunction()">Run sql querry</button>
+  </form>
+<script>
+  function myFunction() {
+    if (confirm("Press a button!")) {
+  txt = "You pressed OK!";
+} else {
+  txt = "You pressed Cancel!";
+}
+  }
+</script>
+
+<p>
+  EXAMPLE OF 4G/SRAN tables : LNBTS,LNCEL WNCELG,LCELW,MRBTS
+</P>
+<p>
+  EXAMPLE OF 3G tables : WBTS,WCEL RNC,ADJS,SDJG,IUPS
+<p>
+  EXAMPLE OF 2G tables :BSC,BCF,BTS,TRX,ADCE,ADJW,TRX
+</P>
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

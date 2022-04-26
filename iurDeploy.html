@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<h1> RNC IUR Deployemt</h1>
+
+
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{form}}
+    <button onclick="myFunction()">Create IUR </button>
+  </form>
+
+</br>
+</br>
+</br>
+</br>
+  
+{% endblock %}

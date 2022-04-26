@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{%block content%}
+
+<br>
+<br>
+<br>
+<br>
+<h1>Search Results</h1>
+
+<ul>
+  {% for city in object_list %}
+    <li>
+      {{ city.description }}, {{ city.resolution }}
+    </li>
+  {% endfor %}
+</ul>
+
+
+</br>
+</br>
+</br>
+</br>
+{% endblock %}

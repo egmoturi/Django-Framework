@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% block  content %}
+
+<br>
+
+<h3>To avoid errors its recommended to run LapD cleanup using link below before creating TRX </h3>
+ <a class="c-dropdown-item" href="/lapd/">Nokia  &nbsp;<span class="c-text-vue"></span>&nbsp; BSC &nbsp;<span class="c-text-vue">LapD </span>&nbsp; &nbsp;<span class="c-text-laravel">cleanup</span></a>
+<br>
+<br>
+<br>
+<form   method="Post"> 
+{% csrf_token %}
+
+<div class="form-group">
+<label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">Direct TRX creation  </label>
+<div class="form-group">  
+{{form}}
+  <input type="submit" value="Create TRX">
+</form>
+<h2>Expected File Input format:</h2>
+ <table>
+ 
+     <tr>
+         <td><strong>Bsc</strong></td>
+         <td><strong>Bcf</strong></td>
+         <td><strong>Bts</strong></td>
+         <td><strong>Freq</strong></td>
+
+  </tr>
+     <tr>
+         <td>KSMBSC2101</td>
+         <td>2060</td>
+         <td>2062</td>
+         <td>48</td>
+ 
+     </tr>
+       <tr>
+         <td>KSMBSC2101</td>
+         <td>2060</td>
+         <td>2065</td>
+         <td>812</td>
+  
+     </tr>
+ </table>
+ <br>
+<form action="{% url "SUR" %}" method="POST" enctype="multipart/form-data" class="form-horizontal"> 
+{% csrf_token %}
+
+<div class="form-group">
+    <label for="name" class="col-md-3 col-sm-3 col-xs-12 control-label">TRX creation using File upload: </label>
+    <div class="col-md-8">
+        <input type="file" name="csv_file" id="csv_file" required="True" class="form-control">
+    </div>                    
+</div>
+<div class="form-group">                    
+    <div class="col-md-3 col-sm-3 col-xs-12 col-md-offset-3" style="margin-bottom:10px;">
+         <button class="btn btn-primary"> <span class="glyphicon glyphicon-upload" style="margin-right:5px;"></span>Upload and Create TRX  </button>
+    </div> 
+</div>
+</form>
+</br>
+</br>
+</br>
+</br>
+{% endblock %}
